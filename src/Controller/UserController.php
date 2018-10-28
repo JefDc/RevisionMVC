@@ -36,4 +36,18 @@ class UserController
         return $this->twig->render('Admin/show.html.twig',['user' => $user]);
     }
 
+    public function create()
+    {
+        return $this->twig->render('Admin/create.html.twig');
+    }
+
+    public function add()
+    {
+        //valider form
+
+        //requete preparé insertion
+        $user
+
+        //rediriger vers les users
+    }
 }
