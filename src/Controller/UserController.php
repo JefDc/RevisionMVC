@@ -28,4 +28,12 @@ class UserController
 
     }
 
+    public function show($id)
+    {
+        $userManager = new UserManager();
+        $user = $userManager->selectById($id);
+
+        return $this->twig->render('Admin/show.html.twig',['user' => $user]);
+    }
+
 }
